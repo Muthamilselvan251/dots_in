@@ -1,0 +1,472 @@
+{
+  "wellnessScore": {
+    "value": 76,
+    "label": "Immune system strength",
+    "zones": [
+      {"name": "Low", "from": 0, "to": 40, "color": 4294198070},
+      {"name": "Moderate", "from": 40, "to": 70, "color": 4294944000},
+      {"name": "Healthy", "from": 70, "to": 100, "color": 4278255360}
+    ]
+  },
+  "organs": [
+    {
+      "id": "overall-health",
+      "name": "Health Conditions",
+      "imageAsset": "assets/images/human-body.png",
+      "callouts": [
+        {"text": "Respiratory health needs monitoring.", "isPositive": false, "anchorX": 0.30, "anchorY": 0.30},
+        {"text": "Knee mobility needs attention.", "isPositive": false, "anchorX": 0.30, "anchorY": 0.70},
+        {"text": "Overall recovery is improving.", "isPositive": true, "anchorX": 0.70, "anchorY": 0.20}
+      ],
+      "condition": {
+        "value": 68,
+        "label": "Overall Health Condition",
+        "zones": [
+          {"name": "Low", "from": 0, "to": 40, "color": 4294198070},
+          {"name": "Moderate", "from": 40, "to": 70, "color": 4294944000},
+          {"name": "Healthy", "from": 70, "to": 100, "color": 4278255360}
+        ]
+      },
+      "riskVariants": [],
+      "recommendationTitle": "Personalized Health Recommendation :",
+      "recommendationBullets": [
+        "Maintain balanced nutrition with adequate protein, vegetables and whole foods.",
+        "Combine regular aerobic activity with strength and mobility exercises.",
+        "Prioritize sleep, hydration, stress management and routine health checks.",
+        "Review persistent pain or breathing symptoms with a qualified medical professional."
+      ],
+      "strengths": ["Recovery", "Heart health", "Daily activity"],
+      "weaknesses": ["Respiratory health", "Knee mobility", "Stress recovery"],
+      "riskAssessment": [
+        {"name": "Overall Wellness", "subtitle": "Target > 75", "score": 68, "status": "moderate"},
+        {"name": "Respiratory Score", "subtitle": "Target > 70", "score": 64, "status": "moderate"},
+        {"name": "Mobility Score", "subtitle": "Target > 70", "score": 66, "status": "moderate"}
+      ]
+    },
+    {
+      "id": "heart",
+      "name": "Heart",
+      "imageAsset": "assets/images/heart-organ.png",
+      "callouts": [
+        {
+          "text": "Better cardiac condition than past.",
+          "isPositive": true,
+          "anchorX": 0.35,
+          "anchorY": 0.25
+        },
+        {
+          "text": "Notice a minor blockage in the lower chamber.",
+          "isPositive": false,
+          "anchorX": 0.35,
+          "anchorY": 0.65
+        }
+      ],
+      "condition": {
+        "value": 76,
+        "label": "Heart Condition",
+        "zones": [
+          {"name": "Low", "from": 0, "to": 40, "color": 4294198070},
+          {"name": "Moderate", "from": 40, "to": 70, "color": 4294944000},
+          {"name": "Healthy", "from": 70, "to": 100, "color": 4278255360}
+        ]
+      },
+      "riskVariants": [
+        {
+          "label": "Heart Attack (Myocardial Infarction)",
+          "score": {
+            "value": 30,
+            "label": "Heart Attack",
+            "zones": [
+              {"name": "Low", "from": 0, "to": 40, "color": 4294198070},
+              {"name": "Moderate", "from": 40, "to": 70, "color": 4294944000},
+              {"name": "High", "from": 70, "to": 100, "color": 4278255360}
+            ]
+          }
+        }
+      ],
+      "recommendationTitle": "Heart Health Recommendation :",
+      "recommendationBullets": [
+        "Eat a heart-friendly diet.",
+        "Stay active with regular cardiovascular exercise.",
+        "Manage stress and maintain healthy sleep habits."
+      ],
+      "strengths": [
+        "HCV Antibody",
+        "HCV Antibody",
+        "HCV Antibody",
+        "HCV Antibody",
+        "HCV Antibody",
+        "HCV Antibody"
+      ],
+      "weaknesses": [
+        "HCV Antibody",
+        "HCV Antibody",
+        "HCV Antibody",
+        "HCV Antibody",
+        "HCV Antibody",
+        "HCV Antibody"
+      ],
+      "riskAssessment": [
+        {
+          "name": "Mentzer",
+          "subtitle": "12.3 - 15.5 secs",
+          "score": 16.7,
+          "status": "moderate"
+        },
+        {
+          "name": "HCV Antibody",
+          "subtitle": "< 0.389",
+          "score": 56.6,
+          "status": "low"
+        },
+        {
+          "name": "Apolipoprotein A1",
+          "subtitle": "12.3 - 15.5 secs",
+          "score": 14.9,
+          "status": "high"
+        },
+        {
+          "name": "Prothrombine Time",
+          "subtitle": "12.3 - 15.5 secs",
+          "score": 6.2,
+          "status": "moderate"
+        },
+        {
+          "name": "HCV Antibody",
+          "subtitle": "< 0.389",
+          "score": 26.0,
+          "status": "low"
+        },
+        {
+          "name": "Immunoglobulim E2",
+          "subtitle": "< 152.9 KUI/L",
+          "score": 69,
+          "status": "high"
+        }
+      ]
+    },
+    {
+      "id": "lungs",
+      "name": "Lungs",
+      "imageAsset": "assets/images/lungs-organ-4.png",
+      "callouts": [
+        {
+          "text": "Better respiration condition than past.",
+          "isPositive": true,
+          "anchorX": 0.35,
+          "anchorY": 0.25
+        },
+        {
+          "text": "Notice a minor blockage in the lower lung.",
+          "isPositive": false,
+          "anchorX": 0.25,
+          "anchorY": 0.65
+        },
+        {
+          "text": "Recovery phase with better oxygen supply.",
+          "isPositive": true,
+          "anchorX": 0.75,
+          "anchorY": 0.35
+        }
+      ],
+      "condition": {
+        "value": 66,
+        "label": "Lungs Condition",
+        "zones": [
+          {"name": "Low", "from": 0, "to": 40, "color": 4294198070},
+          {"name": "Moderate", "from": 40, "to": 70, "color": 4294944000},
+          {"name": "Healthy", "from": 70, "to": 100, "color": 4278255360}
+        ]
+      },
+      "riskVariants": [],
+      "recommendationTitle": "Lungs Health Recommendation :",
+      "recommendationBullets": [
+        "Eat a balanced diet.",
+        "Stay active with regular aerobic exercise.",
+        "Practise deep breathing exercises."
+      ],
+      "strengths": [
+        "HCV Antibody",
+        "HCV Antibody",
+        "HCV Antibody",
+        "HCV Antibody",
+        "HCV Antibody",
+        "HCV Antibody"
+      ],
+      "weaknesses": [
+        "HCV Antibody",
+        "HCV Antibody",
+        "HCV Antibody",
+        "HCV Antibody",
+        "HCV Antibody",
+        "HCV Antibody"
+      ],
+      "riskAssessment": [
+        {
+          "name": "Mentzer",
+          "subtitle": "12.3 - 15.5 secs",
+          "score": 16.7,
+          "status": "moderate"
+        },
+        {
+          "name": "HCV Antibody",
+          "subtitle": "< 0.389",
+          "score": 56.6,
+          "status": "low"
+        },
+        {
+          "name": "Apolipoprotein A1",
+          "subtitle": "12.3 - 15.5 secs",
+          "score": 14.9,
+          "status": "high"
+        },
+        {
+          "name": "Prothrombine Time",
+          "subtitle": "12.3 - 15.5 secs",
+          "score": 6.2,
+          "status": "moderate"
+        },
+        {
+          "name": "HCV Antibody",
+          "subtitle": "< 0.389",
+          "score": 26.0,
+          "status": "low"
+        },
+        {
+          "name": "Immunoglobulim E2",
+          "subtitle": "< 152.9 KUI/L",
+          "score": 69,
+          "status": "high"
+        }
+      ]
+    },
+    {
+      "id": "kidneys",
+      "name": "Kidneys",
+      "imageAsset": "assets/images/kidney-organ-1.png",
+      "callouts": [
+        {"text": "Filtration markers are generally stable.", "isPositive": true, "anchorX": 0.3, "anchorY": 0.25},
+        {"text": "Hydration needs attention.", "isPositive": false, "anchorX": 0.25, "anchorY": 0.65},
+        {"text": "Recovery trend is improving.", "isPositive": true, "anchorX": 0.75, "anchorY": 0.35}
+      ],
+      "condition": {
+        "value": 72,
+        "label": "Kidneys Condition",
+        "zones": [
+          {"name": "Low", "from": 0, "to": 40, "color": 4294198070},
+          {"name": "Moderate", "from": 40, "to": 70, "color": 4294944000},
+          {"name": "Healthy", "from": 70, "to": 100, "color": 4278255360}
+        ]
+      },
+      "riskVariants": [],
+      "recommendationTitle": "Kidneys Health Recommendation :",
+      "recommendationBullets": [
+        "Drink enough water throughout the day.",
+        "Keep salt intake moderate.",
+        "Monitor blood pressure and routine kidney markers."
+      ],
+      "strengths": ["Filtration", "Electrolytes", "Blood pressure"],
+      "weaknesses": ["Hydration", "Sodium intake", "Recovery"],
+      "riskAssessment": [
+        {"name": "Creatinine", "subtitle": "0.6 - 1.2 mg/dL", "score": 0.9, "status": "low"},
+        {"name": "eGFR", "subtitle": "> 60 mL/min", "score": 78, "status": "low"},
+        {"name": "Urea", "subtitle": "7 - 20 mg/dL", "score": 22, "status": "moderate"}
+      ]
+    },
+    {
+      "id": "brain",
+      "name": "Brain",
+      "imageAsset": "assets/images/brain-organ-1.png",
+      "callouts": [
+        {"text": "Cognitive response is stable.", "isPositive": true, "anchorX": 0.3, "anchorY": 0.25},
+        {"text": "Sleep quality needs attention.", "isPositive": false, "anchorX": 0.25, "anchorY": 0.65},
+        {"text": "Stress recovery is improving.", "isPositive": true, "anchorX": 0.75, "anchorY": 0.35}
+      ],
+      "condition": {
+        "value": 81,
+        "label": "Brain Condition",
+        "zones": [
+          {"name": "Low", "from": 0, "to": 40, "color": 4294198070},
+          {"name": "Moderate", "from": 40, "to": 70, "color": 4294944000},
+          {"name": "Healthy", "from": 70, "to": 100, "color": 4278255360}
+        ]
+      },
+      "riskVariants": [],
+      "recommendationTitle": "Brain Health Recommendation :",
+      "recommendationBullets": [
+        "Maintain a consistent sleep schedule.",
+        "Include regular aerobic activity and mental exercises.",
+        "Use relaxation techniques to manage stress."
+      ],
+      "strengths": ["Cognition", "Focus", "Memory"],
+      "weaknesses": ["Sleep", "Stress", "Screen time"],
+      "riskAssessment": [
+        {"name": "Sleep Score", "subtitle": "Target > 80", "score": 74, "status": "moderate"},
+        {"name": "Focus Index", "subtitle": "Target > 70", "score": 82, "status": "low"},
+        {"name": "Stress Index", "subtitle": "Target < 40", "score": 46, "status": "moderate"}
+      ]
+    },
+    {
+      "id": "bones",
+      "name": "Bones",
+      "imageAsset": "assets/images/spine--1.png",
+      "callouts": [
+        {"text": "Posture response is stable.", "isPositive": true, "anchorX": 0.3, "anchorY": 0.25},
+        {"text": "Vitamin D needs attention.", "isPositive": false, "anchorX": 0.25, "anchorY": 0.65},
+        {"text": "Mobility is improving.", "isPositive": true, "anchorX": 0.75, "anchorY": 0.35}
+      ],
+      "condition": {
+        "value": 69,
+        "label": "Bones Condition",
+        "zones": [
+          {"name": "Low", "from": 0, "to": 40, "color": 4294198070},
+          {"name": "Moderate", "from": 40, "to": 70, "color": 4294944000},
+          {"name": "Healthy", "from": 70, "to": 100, "color": 4278255360}
+        ]
+      },
+      "riskVariants": [],
+      "recommendationTitle": "Bones Health Recommendation :",
+      "recommendationBullets": [
+        "Include weight-bearing and resistance exercises.",
+        "Maintain adequate calcium, protein and vitamin D intake.",
+        "Take regular movement breaks and practise good posture."
+      ],
+      "strengths": ["Mobility", "Posture", "Strength"],
+      "weaknesses": ["Vitamin D", "Calcium", "Sitting time"],
+      "riskAssessment": [
+        {"name": "Vitamin D", "subtitle": "30 - 100 ng/mL", "score": 24, "status": "high"},
+        {"name": "Calcium", "subtitle": "8.5 - 10.5 mg/dL", "score": 9.1, "status": "low"},
+        {"name": "Mobility Score", "subtitle": "Target > 70", "score": 75, "status": "low"}
+      ]
+    },
+    {
+      "id": "stomach",
+      "name": "Stomach",
+      "imageAsset": "assets/images/stomach-organ-1.png",
+      "callouts": [
+        {"text": "Digestion pattern is stable.", "isPositive": true, "anchorX": 0.3, "anchorY": 0.25},
+        {"text": "Meal timing needs attention.", "isPositive": false, "anchorX": 0.25, "anchorY": 0.65},
+        {"text": "Inflammation trend is improving.", "isPositive": true, "anchorX": 0.75, "anchorY": 0.35}
+      ],
+      "condition": {
+        "value": 74,
+        "label": "Stomach Condition",
+        "zones": [
+          {"name": "Low", "from": 0, "to": 40, "color": 4294198070},
+          {"name": "Moderate", "from": 40, "to": 70, "color": 4294944000},
+          {"name": "Healthy", "from": 70, "to": 100, "color": 4278255360}
+        ]
+      },
+      "riskVariants": [],
+      "recommendationTitle": "Stomach Health Recommendation :",
+      "recommendationBullets": [
+        "Keep meal timing consistent and avoid very late meals.",
+        "Eat slowly and include varied whole foods.",
+        "Track foods that repeatedly cause discomfort."
+      ],
+      "strengths": ["Digestion", "Appetite", "Tolerance"],
+      "weaknesses": ["Meal timing", "Acidity", "Hydration"],
+      "riskAssessment": [
+        {"name": "Digestive Score", "subtitle": "Target > 70", "score": 76, "status": "low"},
+        {"name": "Inflammation", "subtitle": "Target < 3.0", "score": 3.4, "status": "moderate"},
+        {"name": "Meal Regularity", "subtitle": "Target > 80", "score": 68, "status": "moderate"}
+      ]
+    },
+    {
+      "id": "intestine",
+      "name": "Intestine",
+      "imageAsset": "assets/images/intestine-organ-1.png",
+      "callouts": [
+        {"text": "Gut balance is generally stable.", "isPositive": true, "anchorX": 0.3, "anchorY": 0.25},
+        {"text": "Fiber intake needs attention.", "isPositive": false, "anchorX": 0.25, "anchorY": 0.65},
+        {"text": "Recovery trend is improving.", "isPositive": true, "anchorX": 0.75, "anchorY": 0.35}
+      ],
+      "condition": {
+        "value": 71,
+        "label": "Intestine Condition",
+        "zones": [
+          {"name": "Low", "from": 0, "to": 40, "color": 4294198070},
+          {"name": "Moderate", "from": 40, "to": 70, "color": 4294944000},
+          {"name": "Healthy", "from": 70, "to": 100, "color": 4278255360}
+        ]
+      },
+      "riskVariants": [],
+      "recommendationTitle": "Intestine Health Recommendation :",
+      "recommendationBullets": [
+        "Gradually increase fiber from varied plant foods.",
+        "Stay hydrated and maintain regular movement.",
+        "Include fermented foods if they are well tolerated."
+      ],
+      "strengths": ["Gut balance", "Regularity", "Tolerance"],
+      "weaknesses": ["Fiber", "Hydration", "Food variety"],
+      "riskAssessment": [
+        {"name": "Fiber Intake", "subtitle": "25 - 30 g/day", "score": 19, "status": "moderate"},
+        {"name": "Gut Balance", "subtitle": "Target > 70", "score": 73, "status": "low"},
+        {"name": "Hydration", "subtitle": "Target > 80", "score": 66, "status": "moderate"}
+      ]
+    }
+  ],
+  "bloodMetrics": [
+    {
+      "id": "ldl-cholesterol",
+      "title": "LDL Cholesterol",
+      "value": 36.7,
+      "unit": "mcg/dL",
+      "gauge": {
+        "value": 45,
+        "label": "Moderate",
+        "zones": [
+          {"name": "Very Low", "from": 0, "to": 16, "color": 4294925142},
+          {"name": "Low", "from": 16, "to": 32, "color": 4294937203},
+          {"name": "Moderate", "from": 32, "to": 48, "color": 4294958870},
+          {"name": "Optimal", "from": 48, "to": 64, "color": 4292869632},
+          {"name": "High", "from": 64, "to": 82, "color": 4287877179},
+          {"name": "Very High", "from": 82, "to": 100, "color": 4279218380}
+        ]
+      },
+      "impactedParameters": [
+        {
+          "title": "Diet (saturated fat, sugar intake)",
+          "subtitle": "Limit saturated fats and sugars to keep arteries clear and cholesterol in check."
+        },
+        {
+          "title": "Physical activity levels",
+          "subtitle": "Regular exercise strengthens the heart and improves circulation."
+        },
+        {
+          "title": "Body weight and waist circumference",
+          "subtitle": "Maintaining a healthy weight reduces strain on the heart and lowers risk factors."
+        }
+      ],
+      "aboutTitle": "ABOUT LDL CHOLESTEROL",
+      "aboutBody": "LDL Cholesterol, often referred to as bad cholesterol, plays a key role in heart health. Elevated LDL levels can lead to the buildup of plaque in arteries, increasing the risk of heart disease and stroke. Key functions and impacts of LDL cholesterol in the body include"
+    }
+  ],
+  "hormones": [
+    {
+      "id": "prolactin",
+      "title": "Prolactin Hormone",
+      "value": 18.6,
+      "unit": "ng/mL",
+      "gauge": {
+        "value": 54,
+        "label": "Optimal",
+        "zones": [
+          {"name": "Very Low", "from": 0, "to": 16, "color": 4294925142},
+          {"name": "Low", "from": 16, "to": 32, "color": 4294937203},
+          {"name": "Moderate", "from": 32, "to": 48, "color": 4294958870},
+          {"name": "Optimal", "from": 48, "to": 64, "color": 4292869632},
+          {"name": "High", "from": 64, "to": 82, "color": 4287877179},
+          {"name": "Very High", "from": 82, "to": 100, "color": 4279218380}
+        ]
+      },
+      "impactedParameters": [
+        {"title": "Sleep and recovery", "subtitle": "Consistent sleep supports healthy hormone regulation and recovery."},
+        {"title": "Stress levels", "subtitle": "Long-term stress can affect pituitary hormone balance."},
+        {"title": "Medication and nutrition", "subtitle": "Medication history and balanced nutrition can influence prolactin levels."}
+      ],
+      "aboutTitle": "ABOUT PROLACTIN HORMONE",
+      "aboutBody": "Prolactin is produced by the pituitary gland. It supports reproductive health and several metabolic functions. Persistently abnormal results should be reviewed with a qualified medical professional together with symptoms and other laboratory findings."
+    }
+  ]
+}
